@@ -6,20 +6,9 @@ $page = (isset($_GET['page']) ? $_GET['page'] : 'main');
 ?>
 <html>
 <head>
-    <title>Наш первый сайт</title>
 </head>
 <body>
 <header>
-    <nav>
-        <a href="index.php?page=main">Главная страница сайта</a> |
-        <a href="index.php?page=contacts">Контакты</a>
-    </nav>
-</header>
-
-<?php include basename($page).'.php'; ?>
-
-<footer>
-    Сайт сделан сегодня и все права принадлежат его создателю :)
-</footer>
+   <?php require "Blocks/header.php" ?>
 </body>
 </html>
