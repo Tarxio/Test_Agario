@@ -1,0 +1,11 @@
+<style>
+.btn btn-success d-block mr-auto {
+
+position: absolute;
+    top: 50%;
+}
+.btn btn-success d-block mr-auto{
+    left: 0;
+    transform: translate(-125%, -50%);
+
+</style>
