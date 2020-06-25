@@ -27,7 +27,7 @@ $page = (isset($_GET['page']) ? $_GET['page'] : 'main');
 
     <div class="container mt-5">
 
-        <form action="check.php" method="post">
+        <form action="check.php" >
             <textarea rows="2" cols="80" name="message" class="form-contorl" placeholder="Введите название"></textarea><br>
             <button type="submit" name="send" class="btn btn-success d-block mr-auto">Add</button>
         </form>
