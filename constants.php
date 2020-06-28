@@ -3,4 +3,4 @@
 $host = "localhost:8889";
 $username = "root";
 $password = "root";
-$db_name = "userlistdb";
+$db_name = "testagario";

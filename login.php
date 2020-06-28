@@ -15,7 +15,7 @@ if(isset($_POST["login"])){
     if(!empty($_POST['username']) && !empty($_POST['password'])) {
         $username=htmlspecialchars($_POST['username']);
         $password=htmlspecialchars($_POST['password']);
-        $n1=mysqli_connect("localhost:8889","root","root","userlistdb");
+        $n1=mysqli_connect("localhost:8889","root","root","testagario");
         $query =mysqli_query($n1, "SELECT * FROM usertbl WHERE username='".$username."' AND password='".$password."'");
         $numrows=mysqli_num_rows($query);
         if($numrows!=0)

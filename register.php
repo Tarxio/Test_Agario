@@ -19,7 +19,7 @@ if(isset($_POST["register"])){
         $email=htmlspecialchars($_POST['email']);
         $username=htmlspecialchars($_POST['username']);
         $password=htmlspecialchars($_POST['password']);
-        $n1=mysqli_connect("localhost:8889","root","root","userlistdb");
+        $n1=mysqli_connect("localhost:8889","root","root","testagario");
         $query=mysqli_query("SELECT * FROM usertbl WHERE username='".$username."'");
         $numrows=mysqli_num_rows($query);
         if($numrows==0)
