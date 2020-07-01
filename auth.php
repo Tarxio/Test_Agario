@@ -1,6 +1,6 @@
 <?php
 
-function checkAuth(string $login, string $password): bool
+function checkAuth(string $login, string $password, $users): bool
 {
 
 
@@ -19,7 +19,7 @@ function getUserLogin(): ?string
     $loginFromCookie = $_COOKIE['login'] ?? '';
     $passwordFromCookie = $_COOKIE['password'] ?? '';
 
-    if (checkAuth($loginFromCookie, $passwordFromCookie))
+    if (checkAuth($loginFromCookie, $passwordFromCookie,))
     {
         return $loginFromCookie;
     }

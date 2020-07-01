@@ -45,7 +45,7 @@ if(isset($_POST["register"])){
 <div class="container mregister">
     <div id="login">
         <h1>Регистрация</h1>
-        <form action="login.php" id="registerform" method="post" name="registerform" action="login.php">
+        <form action="register.php" id="registerform" method="post" name="registerform" action="login.php">
             <p><label for="user_login">Полное имя<br>
                     <input class="input" id="full_name" name="full_name"size="32"  type="text" value=""></label></p>
             <p><label for="user_pass">E-mail<br>
