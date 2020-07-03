@@ -22,13 +22,14 @@ $page = (isset($_GET['page']) ? $_GET['page'] : 'main');
 
     </header>
 
-    <div class="d-flex justify-content-between align-items-center">
-        <div id="play-menu" class="hidden">
-            <canvas id="cl" width="400" height="200" style="left: 200px; top:31.5px;">cdcs</canvas>
+
+      <canvas id="cl">cdcs</canvas>
+
+          <div id="play-menu" class="rovno" style="margin: 0px auto; text-align: left;">
             <input type="text" id="username-input" placeholder="Name" />
             <button id="start">PLAY</button>
         </div>
-    </div>
+
 
 
 

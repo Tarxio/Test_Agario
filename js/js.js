@@ -1,6 +1,12 @@
 let canvas = document.getElementById('cl');
 let ctx = canvas.getContext('2d');
 
+canvas.width = (window.innerWidth * 90) / 100;
+canvas.height = (window.innerHeight * 90) / 100;
+canvas.style.setProperty ('left', (window.innerWidth - canvas.width)/2 + 'px');
+canvas.style.setProperty ('top', (window.innerHeight - canvas.height)/2 + 'px');
+
+ctx.fillRect(0, 0, canvas.width, canvas.height);
 
 let x = canvas.width/2;
 let y = canvas.height-30;
